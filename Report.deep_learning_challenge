@@ -1,0 +1,69 @@
+
+                     OVERVIEW
+
+This report summarizes the performance of a deep learning model created using a neural network for Alphabet Soup's funding application prediction. The model's purpose was to accurately identify successful funding applications to assist Alphabet Soup in decision-making and resource optimization.
+                        RESULTS
+The target variable was the "IS_SUCCESSFUL" column.
+
+Features variables of this model：APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT.
+
+Activation functions: relu for input and hidden layer, sigmoid for output layer.
+Rmoved variables from the dataset: EIN, NAME
+
+
+Number of layers: input layer, two hidden layers and output layer
+Number of neurons: 7, 14 
+Reason: the output layer always require only one neuron because there will be only one result output from the model (success or not success)
+Activation functions: relu for input and hidden layer, sigmoid for output layer;
+Reason: All the features variables are positive and the target variable is a binary variable
+Unfortunately, the model performance still not improved after all the changes.
+
+Steps to Improve Performance: Several model optimization methods were used, such as:
+Increased the numbers of nuerons
+Increased the numbers of hidden layers
+
+                            SUMMARY
+The model's performance was not satisfactory, with a high loss of 0.55 and a low accuracy of 0.73. It struggled to learn from the training data, as indicated by the lack of decrease in loss during training. As a solution, it is recommended to utilize a random forest or decision tree model, which can handle both numerical and categorical data effectively and have a proven track record of success with large datasets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
